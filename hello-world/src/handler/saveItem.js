@@ -1,4 +1,4 @@
-import { saveItemStorage } from "../bussines/saveItemDynamoDb.js";
+import { saveItemStorage } from "../applications/saveItemDynamoDb.js";
 export const handler = async (event, context) => {
   try {
     await saveItemStorage(event.body);
